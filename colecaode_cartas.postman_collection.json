@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "dc38283e-d9a6-45a4-bff0-33a051aa1c61",
+		"name": "colecaode_cartas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\":\"tulio\",\r\n    \"to\":\"pedro\",\r\n    \"body\":\"tmj\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/letter/638bdc52db4d326a9c0d749b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"letter",
+						"638bdc52db4d326a9c0d749b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/letter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"letter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "text",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"638bdad1db4d326a9c0d749a\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/letter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"letter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/letter/638bdad1db4d326a9c0d749a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"letter",
+						"638bdad1db4d326a9c0d749a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creat",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "text",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\":\"tulio\",\r\n    \"to\":\"francisco\",\r\n    \"body\":\"valeuuuuu\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/letter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"letter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
