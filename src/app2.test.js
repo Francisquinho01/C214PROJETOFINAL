@@ -6,7 +6,7 @@ describe('get Endpoints', () => {
         const res = await request(app)
             .get('/letter')
         expect(res.statusCode).toEqual(200)
-        //expect(response.body.message).toBe('pass!')
-        //expect(res.body).toHaveProperty('post')
+        
+        
     })
 })
