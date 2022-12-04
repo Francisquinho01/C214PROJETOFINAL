@@ -10,9 +10,9 @@ Após baixar o projeto você pode abrir e visualizar com o visual studio para is
 .OK
 
 3-Itens Utilizados:
-.VisualStudio
-.Postman(API)
-.Mongobd(banco de dados)
+,VisualStudio
+,Postman(API)
+ e Mongobd(banco de dados).
 
 
 
