@@ -5,7 +5,7 @@ const axios = require('axios').default;
 var bodyParser = require('body-parser')
 
 const port = process.env.PORT || 3000 
-const url_mongo = process.env.MONGODB_URI || 'mongodb+srv://Noel:gastar01@cluster0.s2srxby.mongodb.net/letter?retryWrites=true&w=majority';//o caminho para conectar no mongo BD (usuario e senha)
+const url_mongo = process.env.MONGODB_URI || 'mongodb+srv://Noel:gastar01@cluster0.s2srxby.mongodb.net/letter?retryWrites=true&w=majority';
 const Letter = require('./letter');
 var jsonParser = bodyParser.json()
 

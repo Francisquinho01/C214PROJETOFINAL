@@ -60,9 +60,9 @@ app.patch('/letter/:letter_id([0-9a-fA-F]{24})', jsonParser, async (req, res, ne
   try {
     let id = req.params.letter_id; 
     
-    let result = await Letter.findByIdAndUpdate(id, req.body).lean(); //Searching by ID and updating with the http request body
+    let result = await Letter.findByIdAndUpdate(id, req.body).lean(); 
     if (result != null) { 
-      let the_letter = await Letter.findById(id); //Searching the updated document
+      let the_letter = await Letter.findById(id); 
       res.status(200)
       res.json({ message: "Updated" })
     } else {
